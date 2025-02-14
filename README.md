@@ -1,3 +1,22 @@
+# DS_Demo-VaatDisuDe
+
+## Description
+
+This repository appears to be a demonstration project (DS_Demo) likely showcasing graphics or rendering techniques using C++ and OpenGL.  Based on the included files (OGL.cpp, OGL.rc, shaders, textures, etc.), it's probable that this project uses OpenGL for rendering and may include custom shaders written in GLSL. It seems to also include headers, songs and textures. The specific techniques demonstrated are not clear from the file list alone but is likely related to special effects.
+
+## Screenshots
+
+![Repository Files](screenshot.png)
+
+*Note: A more visually representative screenshot of the demo in action will be added soon.*
+
+## Video
+
+[Click to watch the Demo Video!](https://www.youtube.com/watch?v=YOUR_VIDEO_ID)  *(Replace YOUR_VIDEO_ID with the actual YouTube video ID of your demo)*
+
+## Folder Structure
+
+The repository structure is organized as follows:
 
 ## Dependencies
 
