@@ -18,7 +18,7 @@ To maintain visual consistency, all images are displayed with a maximum width of
 
 ![Standard Tessellation](02_Tessilation/S1.png)
 
-[![Video Thumbnail - Standard Tessellation](https://img.youtube.com/vi/Sx4YjVkJDxQ/maxresdefault.jpg)](https://www.youtube.com/watch?v=Sx4YjVkJDxQ)
+[![Video Thumbnail - Standard Tessellation](https://img.youtube.com/vi/QFp7CFoTlfg/maxresdefault.jpg)](https://www.youtube.com/watch?v=QFp7CFoTlfg)
 
 ## Folder Structure
 
