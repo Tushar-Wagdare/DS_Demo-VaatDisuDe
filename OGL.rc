@@ -1,0 +1,38 @@
+#include "Headers/OGL.h"
+
+MY_AUDIO WAVE Song\VatDisuDe.wav
+
+MYICON ICON Texture\MyIcon.ico
+
+
+TEXTURE_BEE BITMAP Texture\bee1.bmp
+
+TEXTURE_TEST BITMAP Texture\test1.bmp
+
+TEXTURE_WING BITMAP Texture\wing.bmp
+
+TEXTURE_BEEMID BITMAP Texture\beemid.bmp
+
+TEXTURE_TREE_TRUNK BITMAP Texture\cutedTreeTrunk.bmp
+
+TEXTURE_TREE_ROOTS BITMAP Texture\treeRoots.bmp
+
+TEXTURE_TREE_TRUNK1 BITMAP Texture\treeTrunk1.bmp
+
+TEXTURE_TREE_LEAF BITMAP Texture\leaf.bmp
+
+TEXTURE_TREE_LEAF1 BITMAP Texture\leaf1.bmp
+
+TEXTURE_INITIAL_SKY BITMAP Texture\initialSky.bmp
+
+TEXTURE_ROCK1 BITMAP Texture\rock1.bmp
+
+TEXTURE_SEA_SKY BITMAP Texture\seaSky.bmp
+
+TEXTURE_TERRAIN_ONE BITMAP Texture\sceneOneTerrain.bmp
+
+TEXTURE_SEA_WAVES BITMAP Texture\seaWaves.bmp
+
+TEXTURE_SEA_LAVA_WAVES BITMAP Texture\seaLavaWaves.bmp
+
+SPLASHSCREEN_ID BITMAP Texture\SplashScreen.bmp
