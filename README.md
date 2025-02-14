@@ -1,71 +1,23 @@
-# OpenGL-Tessellation
+# Vaat Disu De
 
 ## Description
 
-This repository demonstrates the implementation of Tessellation in OpenGL using C++ and GLSL. Tessellation is a process that subdivides high-order surfaces into triangles, providing better rendering performance and a more detailed look with a lower memory footprint compared to complex meshes. This repository includes two Tessellation techniques: Height Map Tessellation and Standard Tessellation.
+This repository contains my DS Demo "Vaat Disu De" using OpenGL(FFP) made while learning OpenGL using C++. "Vaat Disu De" is a story of a small honeybee and its mother as they search for a new home after their forest habitat is destroyed. Despite the challenges, their bond and determination shine through in this uplifting tale.
 
-## Screenshots
+##### Demo video
 
-To maintain visual consistency, all images are displayed with a maximum width of 600 pixels. This ensures that larger images are scaled down to fit the layout, while smaller images retain their original size and are not stretched. The height is automatically adjusted to preserve the aspect ratio.
-
-##### Height Map Tessellation
-
-![Height Map Tessellation](01_HeightMap/S1.png)
-
-[![OpenGL - Height Map Demo](01_HeightMap/HeightMap.png)](https://youtu.be/SkPq1Y5yoWk)
-
-##### Simple Tessellation
-
-![Standard Tessellation](02_Tessilation/S1.png)
 
 [![Video Thumbnail - Standard Tessellation](https://img.youtube.com/vi/QFp7CFoTlfg/maxresdefault.jpg)](https://www.youtube.com/watch?v=QFp7CFoTlfg)
 
 ## Folder Structure
 
-*   `01_HeightMap`: Contains the Height Map Tessellation implementation.
-    *   `HeightMap/x64/Debug`: Contains build files and output executables.
-    *   `resources`: Contains the heightmap and other texture assets.
-    *   `shaders`: Contains the GLSL shader programs required.
-    *   `x64/Debug`: Contains debug build output.
-*   `02_Tessellation`: Contains the Standard Tessellation implementation.
-    *   `Test/x64/Debug`: Contains build files and output executables.
-    *   `resources`: Contains the model and texture assets required.
-    *   `shaders`: Contains the GLSL shader programs required.
-    *   `x64/Debug`: Contains debug build output.
-*   `.gitignore`: Contains the files that are skipped during the Git process.
+The repository structure is organized as follows:
 
-## Dependencies
-
-Before building and running this project, you need to install the following dependencies:
-
-*   **GLEW (OpenGL Extension Wrangler Library):** Download GLEW and add the `include` directory and library files (e.g., `glew32.lib`) to your system environment variables.
-*   **GLM (OpenGL Mathematics):** Download GLM. GLM is a header-only library, so simply copy the `glm` directory into your project's include path.
-
-**Note:** Adding GLEW, Assimp and GLM to your system environment variables ensures that Visual Studio can find them during the build process. This typically involves adding paths to the `INCLUDE` and `LIB` environment variables.
-
-## Build Instructions (Visual Studio 2022)
-
-Follow these steps to build the project using Visual Studio 2022:
-
-1.  **Clone the Repository:** Clone this repository to your local machine using the following command:
-    ```bash
-    git clone https://github.com/Tushar-Wagdare/OpenGL-Tessellation.git
-    ```
-2.  **Open the Solution:** Open the `OGL.sln` file in Visual Studio 2022 within either the `01_HeightMap` or `02_Tessellation` folder. **(Important: Each folder has separate project. Make sure to open the correct `.sln` file for the technique you wish to build.)**
-3.  **Build the Solution:** Go to `Build` -> `Build Solution` (or press `Ctrl+Shift+B`).
-4.  **Ensure all dependencies are present:** Make sure all the dependencies are installed and placed in the system environment.
-5.  **Run the Solution:** After building, run the executable located in the respective `x64/Debug` directory.
-
-## Usage
-
-After successfully building the project, you can run the executable located in the `x64/Debug` directory within either the `01_HeightMap` or `02_Tessellation` folder. Explore the two different techniques and observe their different approaches.
-**Important: Run the executable corresponding to the `.sln` file you used to build.**
-
-```html
-<style>
-img {
-  max-width: 600px; /* Images wider than 600px will be scaled down. Smaller images will remain at their original size. */
-  height: auto; /* Maintain aspect ratio */
-}
-</style>
-****
+*   `Headers`: Contains C++ header files (.h). These files likely define classes, structures, and function prototypes used in the project.
+*   `Song`: Contains audio files (likely .mp3, .wav, etc.) used for background music or sound effects.
+*   `Texture`: Contains image files (.png, .jpg, etc.) used as textures for rendering objects and scenes.
+*   `.gitignore`: Specifies intentionally untracked files that Git should ignore, such as build outputs and temporary files.
+*   `OGL.cpp`: Main C++ source code file. Contains the core program logic and likely the `main()` function.
+*   `OGL.rc`: Resource file.  This Windows resource file is used to embed application icons, version information, and other resources into the executable.
+*   `build.bat`: Batch script for building the project on Windows. Automates the compilation process.
+*   `git_push.bat`: Batch script for pushing changes to the Git repository.  A convenience script for streamlining Git operations.
