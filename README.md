@@ -1,29 +1,44 @@
-# DS_Demo-VaatDisuDe
+# OpenGL-Tessellation
 
 ## Description
 
-This repository appears to be a demonstration project (DS_Demo) likely showcasing graphics or rendering techniques using C++ and OpenGL.  Based on the included files (OGL.cpp, OGL.rc, shaders, textures, etc.), it's probable that this project uses OpenGL for rendering and may include custom shaders written in GLSL. It seems to also include headers, songs and textures. The specific techniques demonstrated are not clear from the file list alone but is likely related to special effects.
+This repository demonstrates the implementation of Tessellation in OpenGL using C++ and GLSL. Tessellation is a process that subdivides high-order surfaces into triangles, providing better rendering performance and a more detailed look with a lower memory footprint compared to complex meshes. This repository includes two Tessellation techniques: Height Map Tessellation and Standard Tessellation.
 
 ## Screenshots
 
-![Repository Files](screenshot.png)
+To maintain visual consistency, all images are displayed with a maximum width of 600 pixels. This ensures that larger images are scaled down to fit the layout, while smaller images retain their original size and are not stretched. The height is automatically adjusted to preserve the aspect ratio.
 
-*Note: A more visually representative screenshot of the demo in action will be added soon.*
+##### Height Map Tessellation
 
-## Video
+![Height Map Tessellation](01_HeightMap/S1.png)
 
-[Click to watch the Demo Video!](https://www.youtube.com/watch?v=YOUR_VIDEO_ID)  *(Replace YOUR_VIDEO_ID with the actual YouTube video ID of your demo)*
+[![OpenGL - Height Map Demo](01_HeightMap/HeightMap.png)](https://youtu.be/SkPq1Y5yoWk)
+
+##### Simple Tessellation
+
+![Standard Tessellation](02_Tessilation/S1.png)
+
+[![Video Thumbnail - Standard Tessellation](https://img.youtube.com/vi/Sx4YjVkJDxQ/maxresdefault.jpg)](https://www.youtube.com/watch?v=Sx4YjVkJDxQ)
 
 ## Folder Structure
 
-The repository structure is organized as follows:
+*   `01_HeightMap`: Contains the Height Map Tessellation implementation.
+    *   `HeightMap/x64/Debug`: Contains build files and output executables.
+    *   `resources`: Contains the heightmap and other texture assets.
+    *   `shaders`: Contains the GLSL shader programs required.
+    *   `x64/Debug`: Contains debug build output.
+*   `02_Tessellation`: Contains the Standard Tessellation implementation.
+    *   `Test/x64/Debug`: Contains build files and output executables.
+    *   `resources`: Contains the model and texture assets required.
+    *   `shaders`: Contains the GLSL shader programs required.
+    *   `x64/Debug`: Contains debug build output.
+*   `.gitignore`: Contains the files that are skipped during the Git process.
 
 ## Dependencies
 
-Before building and running the application, ensure you have the following dependencies installed and configured:
+Before building and running this project, you need to install the following dependencies:
 
 *   **GLEW (OpenGL Extension Wrangler Library):** Download GLEW and add the `include` directory and library files (e.g., `glew32.lib`) to your system environment variables.
-*   **Assimp (Open Asset Import Library):** Download Assimp and add the `include` directory and library files (e.g., `assimp.lib`) to your system environment variables.
 *   **GLM (OpenGL Mathematics):** Download GLM. GLM is a header-only library, so simply copy the `glm` directory into your project's include path.
 
 **Note:** Adding GLEW, Assimp and GLM to your system environment variables ensures that Visual Studio can find them during the build process. This typically involves adding paths to the `INCLUDE` and `LIB` environment variables.
@@ -33,25 +48,24 @@ Before building and running the application, ensure you have the following depen
 Follow these steps to build the project using Visual Studio 2022:
 
 1.  **Clone the Repository:** Clone this repository to your local machine using the following command:
-
     ```bash
-    git clone https://github.com/Tushar-Wagdare/DS_Demo-VaatDisuDe.git
+    git clone https://github.com/Tushar-Wagdare/OpenGL-Tessellation.git
     ```
-
-2.  **Open the Solution:** Open the `OGL.sln` file in Visual Studio 2022 (if there is an OGL.sln file; if not, you may need to create a new project and import the existing source files). If there is no `.sln` file, open the folder with Visual Studio 2022 and create a new project from existing code.
-
-3.  **Build the Solution:** Go to `Build` -> `Build Solution` (or press `Ctrl+Shift+B`). You may need to configure the project settings in Visual Studio to correctly link against the GLEW and Assimp libraries.
-
-4.  **Ensure all dependencies are present:** Make sure all the dependencies are installed and accessible by your Visual Studio project.
-
-5.  **Run the Solution:** After building, run the executable. The executable will be in a `Debug` or `Release` folder depending on your build configuration.
+2.  **Open the Solution:** Open the `OGL.sln` file in Visual Studio 2022 within either the `01_HeightMap` or `02_Tessellation` folder. **(Important: Each folder has separate project. Make sure to open the correct `.sln` file for the technique you wish to build.)**
+3.  **Build the Solution:** Go to `Build` -> `Build Solution` (or press `Ctrl+Shift+B`).
+4.  **Ensure all dependencies are present:** Make sure all the dependencies are installed and placed in the system environment.
+5.  **Run the Solution:** After building, run the executable located in the respective `x64/Debug` directory.
 
 ## Usage
 
-After successfully building the project, run the executable.  Since the specific functionality of the demo is unknown, experiment with the application to discover its features.  It likely involves a graphical display, potentially with user input.  Consult the source code (`OGL.cpp`) to understand how the application works and what rendering techniques are being used.
+After successfully building the project, you can run the executable located in the `x64/Debug` directory within either the `01_HeightMap` or `02_Tessellation` folder. Explore the two different techniques and observe their different approaches.
+**Important: Run the executable corresponding to the `.sln` file you used to build.**
 
-**Tips for Exploration:**
-
-*   Check for keyboard or mouse input.
-*   Examine the shader code in any shader files for clues about the rendering effects.
-*   Look for any UI elements or controls within the application window.
+```html
+<style>
+img {
+  max-width: 600px; /* Images wider than 600px will be scaled down. Smaller images will remain at their original size. */
+  height: auto; /* Maintain aspect ratio */
+}
+</style>
+****
